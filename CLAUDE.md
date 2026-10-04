@@ -3,7 +3,7 @@
 This repo exists to convert files to Markdown with Microsoft MarkItDown
 (https://github.com/microsoft/markitdown). A SessionStart hook installs it automatically.
 
-When the user asks to convert a file (PDF, Word, Excel, PowerPoint, HTML, CSV, JSON, XML, EPUB, ZIP, images, audio, YouTube URL...):
+Any file the user uploads or shares should be converted to Markdown automatically, without waiting to be asked. Same when the user asks to convert a file (PDF, Word, Excel, PowerPoint, HTML, CSV, JSON, XML, EPUB, ZIP, images, audio, YouTube URL...):
 1. Find the file (usually in `input/`, or a path/URL the user gives).
 2. Run: `markitdown "<file>" -o "output/<name>.md"` (use `markitdown "<url>"` for URLs).
 3. Show the user the result path and a short preview; send the .md file with SendUserFile.
